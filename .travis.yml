@@ -9,8 +9,10 @@ addons:
     token:
       secure: RqYwFmrJi84J5PXnB2L+AvELIkHFEv50Q8IIIb2VMt9oAQ7pv/3Ntu362eGBwq995sl9dZvUrf2I7/xU9/gICXsrP884TM0U2ti1aXcK0L0WS9fXhpm1yTiafM7eyfQpU1vIjIFLaiJ1Oek5+VdJSqBaSmh4mcjMp/6Krs1A+YJdtzXQa3fn4fBSsPJl751kSBaFFu1usmPQ2LP6i8zkIv8BprWjyr154mRFLo9jyInA6lLZkfAYH9pagH7BhL3pt47ueU0M3zgA2PKLg3zgq4eQ8FgTRzHu9+2UlqLwDfY4RL8JSO9idu332wfAsu8heh1r8OZtV0jybJSm34Je38KbReMS0V2LYxEM+mI+rBB4tRh15kGD1qAcKgHc8uYiMpZ4JN52kWVNVqDpkoORIM82TutReFZv311XjybG/v/V6ufJ3zDJCgEybJd46e6vQF4FSEF3XZ8zVZ0f4DNcPmOg17h4BnbR5z9yUaxM1Ds+7sSMatcvqV4oPtjbnLErv2j7bc/ntoxAR+m52sLAmguQomxlSKP6I/r57DraYJXYC9fv3pycVaMH4ooKq0enf8sVIKNSzmjNOoi82DKGWubHlvpMcvpiTDQyWKKfHMChKJcyMtibp8gItC+SiE6YX3eiFd3nkC5lfTWheFXBnrHfn1PEe932Z8Uhl+pgJKw=
 script:
-- mvn clean test sonar:sonar -Dsonar.login=6e63b4c152ab69f3107e4353e2a8588491e38d09
+- mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=andrelimabessa_smarturl -Dsonar.login=6e63b4c152ab69f3107e4353e2a8588491e38d09
 cache:
   directories:
   - "$HOME/.m2/repository"
   - "$HOME/.sonar/cache"
+
+
