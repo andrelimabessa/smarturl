@@ -11,9 +11,8 @@ addons:
       secure: Vv+xSM6pt1jecO/SHicE72GaKN6U5SIvbQwCOb2+eQ/EiiS5KFR097HKroQisE8raZaiO9aff1NW5erwIrGkjNlN1CV0BjQ9rGzU4NLEIuHSIQ0jedZeAcG/33BAWW5+GyMp2JXdteuHrK4+IIuWfgh+RpcgMUmcLhQxvYEKzsNKXoqEJQ237V/sTXzwpYrUoVW8vdjeeGI9dp/QsyMmgGwrXdiBDQmbfeOsH2D3mzpfD2YNp8zaSO6ZQtyGuKilF4Oll/saIdyvwiwpqP4t54LQrvvQEaVaXm23BvW2oO+QgGKp5PIs/KZ+0E0qTFy14sFrey1ZldF6QHowJIEbGRNm1GhQGY8wd7LtLnhXtDf/g+XaH67kVsaE7fF/biMr7CideQkboJIcJ/VX2eZ0gSNy/ctB+WO3IBMGCdEjKM2XvpTtuI0iqCMQHZVAZ4gg2tZiNNeAWy6wndWN3Mev2+X70ydgbTKI2RPvZBZELi0elMCwjgXb4MpHQzdMiHtnoTiQeLHkE8bAKqDICfXcp2ktdBl5Nl8yrx3qAbRLoYXs0B79nHEJfTkxO0xWFv+YBmwloh5Mjf5q+4wNkbzI9zLEt+t58ko5/5yVah4Z6V+OKac+fa7ZsCW78M3aOCSFmjSRPkXEvgNWbjeWllGNmd6C5CLxQg4BGn1+A6A2N3E=
 
 script:
-  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=andrelimabessa_smarturl
-
-
+  - mvn clean test sonar:sonar -Dsonar.login=0d894351993f2fdb008e6d991634d60c74c7b4eb
+                                             
 cache:
   directories:
     - '$HOME/.m2/repository' 
