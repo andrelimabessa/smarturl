@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.neueda</groupId>
-	<artifactId>littleurl</artifactId>
+	<artifactId>smarturl</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>LittleUrl</name>
+	<name>SmartUrl</name>
 	<description>An API for short URL creation</description>
 
 	<properties>
